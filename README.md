@@ -4,7 +4,7 @@ The docker-compose.yml file  configure the application and its dependencies or s
 
 
 #### Web App
-The application `main.py` is the `src` folder
+The application `main.py` is in the `src` folder
 
 Either the `Dockerfile` or `docker-compose.yml` YAML file can be used:
 
@@ -13,7 +13,7 @@ Either the `Dockerfile` or `docker-compose.yml` YAML file can be used:
 * Run `docker build -t <docker-image-name>` to build the docker image template
 * Use `docker run --name <docker-container> -d <docker-image-name>` to build the docker container from the image template
 
-For persisting data in the container use [`volumes`](https://docs.docker.com/storage/volumes/)
+  For persisting data in the container use [`volumes`](https://docs.docker.com/storage/volumes/)
 
 
 2. #### docker-compose.yml
