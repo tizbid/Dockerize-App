@@ -1,27 +1,22 @@
-#### Dockerize a simple python web application.
+### Dockerize a simple python web application.
 
 The docker-compose.yml file  configure the application and its dependencies or services
 
-`
-services:
-  app:
-    build: .
-    container_name: python_server
-    command: uvicorn src.main:app --host 0.0.0.0 --port 80 --reload
-    ports:
-      - 80:80
-    volumes:
-      - .:/code
-    depends_on:
-      - redis
+
+#### Web App
+The application `main.py` is the `src` folder
+
+Either the `Dockerfile` or `docker-compose.yml` YAML file can be used:
+
+1. #### Dockerfile
  
-  
+* Run `docker build -t <docker-image-name>` to build the docker image template
+* Use `docker run --name <docker-container> -d <docker-image-name>` to build the docker container from the image template
 
-  redis:
-     image: redis:alpine
+For persisting data in the container use [`volumes`](https://docs.docker.com/storage/volumes/)
 
- `
+
+2. #### docker-compose.yml
 
 Run `docker-compose up --build` to build application. 
 
-Application runs on localhost:80.
