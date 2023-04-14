@@ -2,7 +2,8 @@
 
 The docker-compose.yml file  configure the application and its dependencies or services
 
-`services:
+`
+services:
   app:
     build: .
     container_name: python_server
@@ -17,7 +18,9 @@ The docker-compose.yml file  configure the application and its dependencies or s
   
 
   redis:
-     image: redis:alpine `
+     image: redis:alpine
+
+ `
 
 Run `docker-compose up --build` to build application. 
 
