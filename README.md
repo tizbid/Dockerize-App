@@ -18,5 +18,5 @@ Either the `Dockerfile` or `docker-compose.yml` YAML file can be used:
 
 2. #### docker-compose.yml
 
-Run `docker-compose up --build` to build application. 
+   Run `docker-compose up --build` to build application. 
 
