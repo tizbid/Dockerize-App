@@ -1,4 +1,4 @@
-### Dockerize a simple python web application.
+### Containerize a simple python web application.
 
 Docker is used to automate the packaging and deployment of portable, self-sufficient containers.
 
@@ -8,7 +8,8 @@ The application `main.py` is in the `src` folder and its dpendencies are contain
 `requirements.txt` file
 
 
-The `Dockerfile` build  or `docker-compose.yml` YAML file can be used:
+The `Dockerfile` file in Example 1 build  builds app into single containers
+`docker-compose.yml` YAML file in Example 2 as a multi-container service builds app together with a `Redis` service
 
 1. #### Dockerfile
  
