@@ -8,8 +8,8 @@ The application `main.py` is in the `src` folder and its dpendencies are contain
 `requirements.txt` file
 
 
-The `Dockerfile` file in Example 1 build  builds app into single containers
-`docker-compose.yml` YAML file in Example 2 as a multi-container service builds app together with a `Redis` service
+The `Dockerfile` file,described in 1 build  builds app into single containers, while the
+`docker-compose.yml` YAML as described in 2 builds a multi-container app.
 
 1. #### Dockerfile
  
